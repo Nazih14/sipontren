@@ -1,0 +1,17 @@
+// AUTOCOMPLETE
+
+'uri' => array(
+    'kegiatan' => site_url('akademik/kegiatan/get_all')
+)
+
+$http.get(response.data.uri.kegiatan).then(callbackFormData, notificationService.errorCallback);
+
+function callbackFormData(response) {
+            $scope.dataAutocomplete = response.data;
+            $scope.KEGIATAN_KELAS = formHelper.autocomplete($scope);
+
+            if ($scope.dataUpdate === null || typeof $scope.dataUpdate === 'undefined')
+                formReady();
+            else
+                getData();
+        }

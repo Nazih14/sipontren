@@ -1,0 +1,16 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+
+php_value max_execution_time 0
+php_value max_input_vars 5000
+php_value suhosin.get.max_vars 5000
+php_value suhosin.post.max_vars 5000
+php_value suhosin.request.max_vars 5000
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
