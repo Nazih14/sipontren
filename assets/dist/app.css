@@ -4,17 +4,17 @@
     font-weight: 400;
     src: url(../../assets/fonts/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
     src: local('Material Icons'),
-        local('MaterialIcons-Regular'),
-        url(../../assets/fonts/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
-        url(../../assets/fonts/iconfont/MaterialIcons-Regular.woff) format('woff'),
-        url(../../assets/fonts/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+    local('MaterialIcons-Regular'),
+    url(../../assets/fonts/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../../assets/fonts/iconfont/MaterialIcons-Regular.woff) format('woff'),
+    url(../../assets/fonts/iconfont/MaterialIcons-Regular.ttf) format('truetype');
 }
 @font-face {
     font-family: 'Ubuntu';
     font-style: normal;
     src: local('Ubuntu'),
-        local('Ubuntu'),
-        url(../../assets/fonts/ubuntu/Ubuntu-Regular.ttf) format('truetype');
+    local('Ubuntu'),
+    url(../../assets/fonts/ubuntu/Ubuntu-Regular.ttf) format('truetype');
 }
 button, html, input, select, textarea {
     font-family: Roboto,'Ubuntu',Helvetica Neue,sans-serif;
@@ -366,13 +366,13 @@ textarea.form-control {
 
 .navbar
 {
-    background-color: #0ece9e;
+    background-color: #2a83a6;
     color: #fff;
 }
 .kk-toolbar-tools {
-    font-weight: 400;
+    font-weight: 600;
     color: #fff;
-    padding: 15px 20px;
+    margin-bottom: -20px;
     font-size: 32px;
     background-color: transparent;
 }
@@ -385,7 +385,7 @@ md-toolbar.md-menu-toolbar {
 }
 .kk-menu-bar md-menu.md-open>button, 
 .kk-menu-bar md-menu.md-open button {
-    color: #0da67b;
+    color: #2a83a6;
     background-color: #fff;
 }
 .kk-menu-bar md-menu>button, 
@@ -402,10 +402,15 @@ md-toolbar.md-menu-toolbar {
     background-color: transparent;
 }
 .kk-bg-dark-body {
-    background-color: #0da67b;
+    background-image: linear-gradient(rgb(24,209,255,0.5), rgba(0,0,0,.9)), url("../images/back.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 md-toolbar.md-menu-toolbar .kk-toolbar-filler {
     background-color: #01264c;
+    border-radius: 10px;
     /*background-color: #245871;*/
 }
 .kk-icon-title {
@@ -453,7 +458,7 @@ md-toolbar .kk-toolbar-filler {
     width: 700px;
 }
 .kk-form-control {
-    margin-top: 5px;
+    margin-top: 25px;
 }
 .md-sidenav-backdrop {
     height: 100% !important;
